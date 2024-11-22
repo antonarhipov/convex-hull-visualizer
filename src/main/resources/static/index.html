@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convex Hull Visualizer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Convex Hull Visualizer</h1>
+    <div class="input-section">
+            <textarea id="pointsInput" rows="10" placeholder="Enter points as JSON array, e.g.:
+[
+  {'x':0,'y':0},
+  {'x':1,'y':1},
+  {'x':2,'y':2}
+]"></textarea>
+        <button id="calculateButton">Calculate Convex Hull</button>
+        <button id="randomPointsButton">Generate Random Points</button>
+    </div>
+    <div class="canvas-container">
+        <canvas id="graphCanvas" width="600" height="400"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
