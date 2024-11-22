@@ -34,6 +34,15 @@ fun Application.module() {
     }
 }
 
+// this is just for the demo in the tests
+// see ApplicationTest
+fun Application.configureRouting(){
+    routing {
+        get("/hello") {
+            call.respondText("Hello, World!")
+        }
+    }
+}
 
 @Serializable
 data class Point(val x: Int, val y: Int)
